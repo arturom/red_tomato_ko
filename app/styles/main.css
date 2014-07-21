@@ -64,19 +64,25 @@ body {
 }
 
 /* Search Results */
+/*
 #main table {
     border-bottom: 1px solid #ccc;
     border-collapse: collapse;
 }
+
+#main tbody tr:hover {
+    background-color: #cef;
+}
+*/
+
 #main td {
     max-width: 16em;
     word-wrap: break-word;
-    border: 1px solid #eee;
 }
 #main img {
-    border-bottom: 1px solid #ccc;
     max-width: 16em;
     max-height: 8em;
+    cursor: pointer;
 }
 
 /* Responsive: Portrait tablets and up */
