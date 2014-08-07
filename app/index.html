@@ -83,11 +83,11 @@
                     <h6>total hits: <span data-bind="text: totalHits"></span></h6>
                 </div>
 
-                <div data-bind="visible: client.xhr">
+                <div class="hide" data-bind="visible: client.xhr">
                     Fetching results...
                 </div>
 
-                <table class="table table-hover table-striped table-condensed table-bordered" data-bind="visible: !client.xhr()">
+                <table class="table table-hover table-striped table-condensed table-bordered" data-bind="visible: !client.xhr() && results().length">
                     <thead>
                         <th>Preview</th>
                         <th>Score</th>
